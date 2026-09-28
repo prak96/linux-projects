@@ -136,7 +136,7 @@ The project reinforced the importance of observing the system before changing it
 
 ---
 
-## 9. Automation Should Remove Repetition
+## 9. Scriipting Should Remove Repetition
 
 Identity creation was converted into a shell script rather than repeatedly executing:
 
