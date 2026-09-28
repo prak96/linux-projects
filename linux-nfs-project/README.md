@@ -12,30 +12,8 @@ Rather than only deploying an NFS share, this lab focuses on **real operational 
 
 This lab implements a centralized TrueNAS storage platform consumed by independent Linux client/workload servers.
 
-```text
-                    ┌──────────────────────────┐
-                    │      VMware Workstation   │
-                    │                          │
-                    │      TrueNAS Server       │
-                    │      192.168.20.181       │
-                    │            │              │
-                    │       ZFS Storage         │
-                    │            │              │
-                    │       NFS Shares          │
-                    └────────────┼──────────────┘
-                                 │
-                         VMnet20 / Storage
-                         192.168.20.0/24
-                                 │
-                ┌────────────────┴────────────────┐
-                │                                 │
-        ┌───────▼────────┐                ┌──────▼─────────┐
-        │  CentOS Admin  │                │ Ubuntu Workload│
-        │                │                │                │
-        │ Griffindor     │                │ Slytherin      │
-        │ storage-admin  │                │ storage-admin  │
-        └────────────────┘                └────────────────┘
-```
+
+<img width="1204" height="647" alt="image" src="https://github.com/user-attachments/assets/f83e259c-3f3d-465b-8b9d-40f93a915b9e" />
 
 ---
 
