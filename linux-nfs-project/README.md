@@ -299,7 +299,7 @@ A snapshot is a point-in-time recovery mechanism, not automatically an independe
 
 ---
 
-# Automation
+# Scripting
 
 Shell scripting was used to automate repetitive identity-management tasks.
 
