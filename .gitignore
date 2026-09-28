@@ -1,16 +1,63 @@
+# ==========================================================
+# Linux
+# ==========================================================
+
 *~
+*.swp
+*.swo
 
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
+# ==========================================================
+# Logs / temporary files
+# ==========================================================
 
-# Metadata left by Dolphin file manager, which comes with KDE Plasma
-.directory
+*.log
+*.tmp
+*.bak
 
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
+# ==========================================================
+# Secrets / credentials
+# ==========================================================
 
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.*
+secrets.*
 
-# Log files created by default by the nohup command
-nohup.out
+# ==========================================================
+# Terraform
+# ==========================================================
+
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ==========================================================
+# IDE
+# ==========================================================
+
+.vscode/
+.idea/
+
+# ==========================================================
+# OS
+# ==========================================================
+
+.DS_Store
+Thumbs.db
+
+# ==========================================================
+# Generated benchmark output
+# ==========================================================
+
+fio-output/
+benchmark-output/
