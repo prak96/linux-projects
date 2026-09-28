@@ -36,6 +36,7 @@ This lab implements a centralized TrueNAS storage platform consumed by independe
         │ storage-admin  │                │ storage-admin  │
         └────────────────┘                └────────────────┘
 ```
+<img width="1204" height="647" alt="image" src="https://github.com/user-attachments/assets/f83e259c-3f3d-465b-8b9d-40f93a915b9e" />
 
 ---
 
