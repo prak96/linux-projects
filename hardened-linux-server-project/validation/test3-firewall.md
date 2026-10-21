@@ -7,7 +7,7 @@ sudo ufw status numbered
 sudo ufw status verbose
 ```
 
-## From TEST-SRV01
+## From Ubuntu-Client Server
 
 ```bash
 curl -I --connect-timeout 5 http://172.27.30.100/
