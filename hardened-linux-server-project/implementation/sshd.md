@@ -19,9 +19,9 @@ CentOS/RHEL generally uses `sshd` as the service name.
 ## Create an administrative user
 
 ```bash
-sudo adduser opsadmin
-sudo usermod -aG sudo opsadmin
-id opsadmin
+sudo adduser hrx
+sudo usermod -aG sudo hrx
+id hrx
 ```
 
 On RHEL-like systems, the administrative group is commonly `wheel`; confirm the sudoers policy before assuming membership grants access.
