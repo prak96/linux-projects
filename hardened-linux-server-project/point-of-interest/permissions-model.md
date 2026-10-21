@@ -10,12 +10,14 @@ sudo -l -U <username>
 sudo visudo -c
 ```
 
+
 ## SSH key files
 
 - Private key: client-side only; protect with a passphrase and restrictive permissions.
 - Public key: placed in the target account's `~/.ssh/authorized_keys`.
 - `~/.ssh`: typically mode `700`.
 - `authorized_keys`: typically mode `600`.
+
 
 ## Apache content
 
@@ -25,6 +27,7 @@ Static content should be readable by the Apache worker, but not world-writable. 
 namei -l /var/www/html/index.html
 ls -l /var/www/html/
 ```
+
 
 ## Principle of least privilege
 
