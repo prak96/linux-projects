@@ -14,6 +14,7 @@
 
 Before enabling UFW, check the intended management source and create the scoped allow rule. Keep console access. Confirm `sudo ufw status verbose` and test from the management client before ending the session.
 
+
 ## Failure scenario B: a specific allow exists but SSH is still reachable from everywhere
 
 The project tested a specific allow alongside `22/tcp ALLOW IN Anywhere`. The broad allow still permits other sources. A subnet-specific rule does not revoke an independent broad allow.
