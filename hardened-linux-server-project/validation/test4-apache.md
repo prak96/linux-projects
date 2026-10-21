@@ -1,6 +1,6 @@
 # Test 4 — Apache application validation
 
-## On WEB-SRV01
+## On Ubuntu-Workload
 
 ```bash
 sudo apache2ctl configtest
@@ -11,7 +11,7 @@ curl -I http://172.27.30.100/
 ```
 
 
-## From TEST-SRV01
+## From Ubuntu-Client
 
 ```bash
 curl -v --connect-timeout 5 http://172.27.30.100/
@@ -22,7 +22,7 @@ Open the URL in a browser and test calculator addition, subtraction, multiplicat
 
 ## If it fails
 
-Inspect Apache logs, document-root permissions, UFW, route selection, and AppArmor messages. A static `.html` page works as static content; a `.cshtml` file is not automatically executed by Apache.
+Inspect Apache logs, document-root permissions, UFW & route selections. A static `.html` page works as static content; a `.cshtml` file is not automatically executed by Apache.
 
 
 ## Record actual status
