@@ -9,6 +9,7 @@
 - Permit HTTPS only when TLS is configured and required.
 - Deny other unsolicited inbound access.
 
+
 ## Inspect before changing
 
 ```bash
@@ -20,6 +21,7 @@ sudo ss -lntp
 ```
 
 If connected over SSH, ensure console access and the correct allow rule are available before enabling UFW.
+
 
 ## Safer clean policy sequence
 
@@ -50,9 +52,11 @@ sudo ufw status numbered
 
 Rule numbers change after deletions. Recheck the list before each deletion.
 
+
 ## Why broad rules matter
 
 A source-specific allow rule does not cancel an independent broad allow rule. For example, allowing `172.27.10.0/24` to SSH while retaining `22/tcp ALLOW IN Anywhere` still leaves SSH open to other sources. Prefer removing the broad rule and verifying from both permitted and denied clients. Do not assume UFW behaves like a simple first-match ACL in every rule path.
+
 
 ## Verify
 
@@ -66,10 +70,11 @@ From SERVER - "ubuntu-client":
 
 ```bash
 curl -I --connect-timeout 5 http://172.27.30.100/
-ssh -o ConnectTimeout=5 opsadmin@172.27.30.100
+ssh -o ConnectTimeout=5 hrx@172.27.30.100
 ```
 
 Expected: management SSH works; DMZ HTTP works; DMZ SSH fails. A failed test can also be caused by routing, a stopped service, or wrong source IP, so correlate with server-side checks.
+
 
 ## Logs
 
