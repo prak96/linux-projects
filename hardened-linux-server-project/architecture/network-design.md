@@ -45,10 +45,10 @@ sudo cp /etc/sysconfig/network-scripts/ \
 
 sudo cp /etc/sysconfig/network-scripts/ \
   /etc/sysconfig/network-scripts/ifcfg-ens133.bak
-sudo netplan generate
-sudo netplan try
-# Accept only if connectivity remains healthy.
-sudo netplan apply
+sudo systemctl status networking.service
+sudo systemctl restart networking.service
+
+<Restart if DO NOT WORKS!!!>
 ```
 
 
