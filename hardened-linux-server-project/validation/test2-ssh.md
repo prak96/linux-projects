@@ -1,6 +1,6 @@
 # Test 2 — SSH authentication and source restrictions
 
-## From ADMIN-SRV01
+## From CentOS-Admin
 
 ```bash
 ssh -o ConnectTimeout=5 opsadmin@172.27.10.100
@@ -8,7 +8,7 @@ ssh -o ConnectTimeout=5 opsadmin@172.27.10.100
 
 Expected: successful login with the configured key and named admin account.
 
-## From TEST-SRV01
+## From Ubuntu-Client
 
 ```bash
 ssh -o ConnectTimeout=5 opsadmin@172.27.30.100
@@ -16,7 +16,7 @@ ssh -o ConnectTimeout=5 opsadmin@172.27.30.100
 
 Expected: connection blocked under the intended policy.
 
-## On WEB-SRV01
+## On Ubuntu-Workload
 
 ```bash
 sudo sshd -t
