@@ -1,0 +1,43 @@
+
+# Secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_ed25519
+secrets/
+credentials/
+
+# Private infrastructure data
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.p12
+*.pfx
+
+# Virtual machine files
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.iso
+
+# Temporary files and logs
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Local test output
+test-output/
+reports/generated/
