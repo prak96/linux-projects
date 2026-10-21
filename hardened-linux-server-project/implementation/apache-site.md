@@ -10,6 +10,7 @@ sudo systemctl status apache2 --no-pager
 sudo ss -lntp | grep -E ':(80|443)\b'
 ```
 
+
 ## Deploy the calculator page
 
 The lab used a basic HTML/JavaScript calculator as a simple application endpoint. Place the static page in the configured document root, commonly `/var/www/html/index.html`.
@@ -26,6 +27,7 @@ curl -I http://172.27.30.100/
 ```
 
 `apache2ctl configtest` checks Apache configuration syntax. It does not guarantee that every request will succeed; also check logs and filesystem permissions.
+
 
 ## HTTP versus HTTPS
 
