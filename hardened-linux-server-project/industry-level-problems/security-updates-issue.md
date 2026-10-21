@@ -1,4 +1,4 @@
-# Challenge: automatic security updates unavailable on CentOS
+# Challenge: automatic security updates unavailable on my CentOS-Admin running "CentOS" OS
 
 ## Symptom
 
