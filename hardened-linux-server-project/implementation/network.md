@@ -72,13 +72,12 @@ DNS2=1.1.1.1            # <-- DNS Servers
 ```
 
 
-
 ## Troubleshooting checklist
 
 - Is the IP in the intended subnet? A typo such as `192.168.10.101` instead of `172.27.10.101` breaks the plan.
 - Is Hypervisor's local DHCP service enabled if DHCP is required?
 - Does the VM's virtual NIC connect to the correct custom network?
-- Is the expected gateway configured at the VMware host/virtual-network layer?
+- Is the expected gateway configured at the Hypervisor host/virtual-network layer?
 - Is the default route pointing to the NAT interface?
 - Does `ip route get <destination>` show the expected interface/source?
 - Can the destination be reached before testing SSH or HTTP?
