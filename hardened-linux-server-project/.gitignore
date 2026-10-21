@@ -1,5 +1,5 @@
 
-## Secrets and credentials
+# Secrets and credentials
 .env
 .env.*
 *.pem
@@ -9,14 +9,14 @@ id_ed25519
 secrets/
 credentials/
 
-## Private infrastructure data
+# Private infrastructure data
 *.tfstate
 *.tfstate.*
 *.tfvars
 *.p12
 *.pfx
 
-## Virtual machine files
+# Virtual machine files
 *.vmdk
 *.vdi
 *.vhd
@@ -25,7 +25,7 @@ credentials/
 *.ovf
 *.iso
 
-## Temporary files and logs
+# Temporary files and logs
 *.log
 *.tmp
 *.bak
@@ -34,10 +34,10 @@ credentials/
 .DS_Store
 Thumbs.db
 
-## Editor settings
+# Editor settings
 .vscode/
 .idea/
 
-## Local test output
+# Local test output
 test-output/
 reports/generated/
