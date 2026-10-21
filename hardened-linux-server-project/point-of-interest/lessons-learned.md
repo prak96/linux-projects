@@ -3,7 +3,7 @@
 ## What the project demonstrates
 
 - A server may have multiple NICs, but default-route design still matters.
-- A wrong IP/subnet or VMware virtual-network setting can look like an SSH/service problem.
+- A wrong IP/subnet or Hypervisor based Networking setting can look like an SSH/service problem.
 - `sshd -t` and `apache2ctl configtest` should be run before restarting services.
 - A running service is not sufficient: the listener, route, firewall, and client path must also be correct.
 - Broad firewall allows can undermine a more specific intended policy.
@@ -12,6 +12,7 @@
 - Recovery access and snapshots should be planned before restrictive changes.
 - A `.cshtml` file is not executable server-side merely because it is renamed to `.html`.
 - Opening TCP/443 in a firewall does not configure TLS.
+
 
 ## Improvements for a next iteration
 
