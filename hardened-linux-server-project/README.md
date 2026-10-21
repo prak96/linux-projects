@@ -1,6 +1,6 @@
 # Hardened Linux Server Project
 
-A production-inspired Linux infrastructure lab built with **Ubuntu Server 24.04**, VMware Workstation, Apache2, OpenSSH, UFW, AppArmor validation, and automated security-update tooling. The project focuses on secure administration, network segmentation, controlled web access, recovery planning, and evidence-based troubleshooting.
+A production-inspired Linux infrastructure lab built with **Ubuntu Server 24.04**, Virtualization Platform, Apache2, OpenSSH, UFW and automated security-update tooling. The project focuses on secure administration, network segmentation, controlled web access, recovery planning, and evidence-based troubleshooting.
 
 > **Lab, not a production deployment.** This repository documents a learning environment and the observed troubleshooting journey. HTTPS was planned, but the project notes state that the final website validation remained on HTTP/80. Do not interpret port 443 firewall rules as proof that TLS was configured.
 
@@ -73,7 +73,7 @@ Use a layered sequence instead of changing multiple things at once:
 
 ## Security and operational guardrails
 
-- Keep a VMware console or other out-of-band recovery path available before changing networking, SSH, or firewall rules.
+- Keep a Hypervisor console or other out-of-band recovery path available before changing networking, SSH, or firewall rules.
 - Back up configuration files before editing them.
 - Never commit private SSH keys, passwords, tokens, real hostnames, or sensitive logs.
 - Avoid unrestricted `ufw allow 22/tcp` except as a temporary, controlled recovery measure; remove it after confirming scoped access.
@@ -88,8 +88,5 @@ Screenshots should show real output from your own lab. The repository includes a
 
 ## Skills demonstrated
 
-Linux server administration • VMware Workstation networking • Netplan • OpenSSH • sudoers and groups • Apache2 • UFW • AppArmor inspection • unattended security updates • packet-path troubleshooting • configuration validation • recovery planning • test documentation.
+Linux server administration • Hypervisor Platform networking • Netplan • OpenSSH • sudoers and groups • Apache2 • UFW • unattended security updates • packet-path troubleshooting • configuration validation • recovery planning • test documentation.
 
-## License
-
-Released under the MIT License; see [`LICENSE`](LICENSE).
