@@ -37,7 +37,7 @@ From the client, test the correct destination address and source network. A work
 ## Safe recovery
 
 - Keep the current SSH session open while changing SSH configuration.
-- Maintain VMware console access.
+- Maintain Hypervisor console access.
 - Back up `/etc/ssh/sshd_config`.
 - Validate before reload/restart.
 - Test a second session before closing the original.
