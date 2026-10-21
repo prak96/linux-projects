@@ -8,13 +8,15 @@
 - One management virtual network, one DMZ/test virtual network, and a NAT network.
 - Enough disk space for OS updates and Apache packages.
 
+
 ## VM roles
 
 | VM | Purpose |
-|---|---|
+|----|---------|
 | WEB Server (`web-workload`)   | Apache2, SSH, UFW |
 | ADMIN Server (`centos-admin`) | SSH administration from management network |
 | TEST Server (`ubuntu-client`) | `curl`, optional `nmap`, HTTP & HTTPS tests |
+
 
 ## Build sequence
 
@@ -37,6 +39,7 @@ ip route
 systemctl --failed
 ```
 
+
 ## Install web and diagnostic packages on WEB-SRV01
 
 ```bash
@@ -47,6 +50,7 @@ sudo systemctl enable --now ssh
 ```
 
 On Ubuntu, the service is normally called `ssh`; on CentOS/RHEL, it is normally `sshd`. Verify the name for the distribution before running commands.
+
 
 ## Before you proceed
 
